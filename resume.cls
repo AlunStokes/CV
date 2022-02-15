@@ -112,8 +112,9 @@
 
 \newenvironment{rSubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
  {\bf #1} \hfill {#2} \\ % Bold company name and date on the right
+ \vspace{-1.5em}
  {\em #3} \hfill {\em #4} \\
- \smallskip
+
 }
 
 
