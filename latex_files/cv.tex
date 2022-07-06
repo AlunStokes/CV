@@ -11,17 +11,22 @@
 ]{hyperref}
 \usepackage[dvipsnames]{xcolor}
 
+\input{glyphtounicode}
+\pdfgentounicode=1
+
 \usepackage{xspace}
 \usepackage{textcomp}
 
-\newcommand{\textapprox}{\raisebox{0.5ex}{\texttildelow}}
+\renewcommand{\textapprox}{\raisebox{0.5ex}{\texttildelow}}
+
+\setlength{\headheight}{13.59999pt}
 
 \sloppy
 
 \def\givenname{Alun\xspace}
 \def\surname{Stokes\xspace}
 \def\middlename{Cennyth\xspace}
-\def\middleinitial{C.\xspace}
+\def\middleinitial{C\xspace}
 \def\phone{+1 (647)-287-2418\xspace}
 \def\workemail{stokea1@mcmaster.ca\xspace}
 \def\personalemail{alunsto99@gmail.com\xspace}
@@ -60,8 +65,6 @@
 %\pagestyle{empty}
 
 \begin{document}
-
-
 
 %----------------------------------------------------------------------------------------
 %	RESEARCH INTERESTS
@@ -123,6 +126,12 @@
 %----------------------------------------------------------------------------------------
 
 \input{sections/projects}
+
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL ORGANISATIONS
+%----------------------------------------------------------------------------------------
+
+\input{sections/professsional-orgs}
 
 %----------------------------------------------------------------------------------------
 %	REFERENCES
