@@ -20,3 +20,11 @@ jobs:
       - name: Display the path
         run: echo $PATH
         shell: bash
+        
+      - name: Save ENV
+        run: env > ENV.txt
+        shell: bash
+      
+      - name: acpath
+        run: echo "$$GITHUB_ACTION_PATH$ > gap.txt
+        shell: bash
