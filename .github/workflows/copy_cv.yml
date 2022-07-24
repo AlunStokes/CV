@@ -25,9 +25,13 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Copy CV
-        run: ${{ github.action_path }}/copy_cv.sh
+        run: $GITHUB_WORKSPACE/copy_cv.sh
         shell: bash
         
       - name: Save ENV
         run: env > ENV.txt
+        shell: bash
+      
+      - name: acpath
+        run: echo "$$GITHUB_ACTION_PATH$ > gap.txt
         shell: bash
