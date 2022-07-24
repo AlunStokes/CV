@@ -2,14 +2,13 @@ name: Copy CV CI
 
 on:
   push:
-    branches: [ $default-branch ]
+    branches: [ main ]
 
 jobs:
-  build:
+  name-of-job:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Run copy script
-        run: sh ./copy_cv.sh
+      - name: Copy CV
+        shell: sh
+        run: |
+          ./copy_cv.sh
