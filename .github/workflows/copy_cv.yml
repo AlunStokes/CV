@@ -25,7 +25,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Copy CV
-        working-directory: /
+        shell: sh
         run: |
-          echo "$env"
-          ./copy_cv.sh
+          echo "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY"
+          $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/copy_cv.sh
