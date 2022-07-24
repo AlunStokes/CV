@@ -28,4 +28,5 @@ jobs:
         shell: sh
         run: |
           echo "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY"
-          $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/copy_cv.sh
+          echo "$GITHUB_ENV"
+          $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/blob/main/copy_cv.sh
