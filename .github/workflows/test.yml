@@ -3,7 +3,8 @@ name: test
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
+  #push:
+  workflow_run:
     branches: [ "main" ]
 
   # Allows you to run this workflow manually from the Actions tab
@@ -26,5 +27,5 @@ jobs:
         shell: bash
       
       - name: acpath
-        run: echo "$$GITHUB_ACTION_PATH$ > gap.txt
+        run: echo "$GITHUB_ACTION_PATH" > gap.txt
         shell: bash
