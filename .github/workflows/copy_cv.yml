@@ -26,4 +26,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Copy CV
         working-directory: /
-        run: ./copy_cv.sh
+        run: |
+          echo "$env"
+          ./copy_cv.sh
