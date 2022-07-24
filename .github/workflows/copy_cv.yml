@@ -25,8 +25,9 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Copy CV
-        shell: sh
-        run: |
-          echo "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY"
-          echo "$GITHUB_ENV"
-          $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/blob/main/copy_cv.sh
+        run: ${{ github.action_path }}/copy_cv.sh
+        shell: bash
+        
+      - name: Save ENV
+        run: env > ENV.txt
+        shell: bash
