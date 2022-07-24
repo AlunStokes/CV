@@ -11,4 +11,5 @@ jobs:
       - name: Copy CV
         shell: sh
         run: |
-          ./copy_cv.sh
+          echo "$pwd";
+          ./copy_cv.sh;
