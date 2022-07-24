@@ -25,5 +25,5 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Copy CV
-        run: $GITHUB_WORKSPACE/copy_cv.sh
+        run: cp $GITHUB_WORKSPACE/latex_files/cv.pdf $GITHUB_WORKSPACE/cv.pdf
         shell: bash
