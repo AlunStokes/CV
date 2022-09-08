@@ -147,14 +147,14 @@
 \newenvironment{edSubsectionFull}[6]{
  {\bf #1} \hfill {#2} \\ % Bold company name and date on the right
  {\em #3} \hfill {\em #4} \\
- Supervisor: {\em #5} \hfill {\em #6} \\
+ Supervisor: {#5} \hfill {\em #6} \\
  \vspace{-1em}
 }
 
 \newenvironment{edSubsectionHonours}[6]{
  {\bf #1} \hfill {#2} \\ % Bold company name and date on the right
  {\em #3} \hfill {Honours: #4} \\
- Supervisor: {\em #5} \hfill {\em #6} \\
+ Supervisor: {#5} \hfill {\em #6} \\
  \vspace{-1em}
 }
 

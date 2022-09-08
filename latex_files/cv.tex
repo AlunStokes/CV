@@ -3,10 +3,17 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass{resume}
+%\usepackage{fontspec}
+%\setmainfont{Times New Roman}
+%\setsansfont{Calibri}
+%\setmonofont{IBM Plex Mono}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
 
 %\usepackage{tgpagella}
 \usepackage[T1]{fontenc}
-
 \usepackage[none]{hyphenat}
 
 \usepackage[
@@ -16,21 +23,26 @@
 ]{hyperref}
 \usepackage[dvipsnames]{xcolor}
 
+%\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont{Cambria}
+%\setsansfont[Scale=MatchLowercase]{Calibri}
+%\setmonofont[Fractions=On]{IBM Plex Mono}
+
 %\input{glyphtounicode}
 %\pdfgentounicode=1
 
 \usepackage{xspace}
-\usepackage{textcomp}
 
 \newcommand{\midapprox}{\raisebox{0.5ex}{\texttildelow}}
 
-\setlength{\headheight}{13.59999pt}
+\setlength{\headheight}{13.6pt}
 
-%\sloppy
+\sloppy
 
 \def\givenname{Alun\xspace}
 \def\surname{Stokes\xspace}
 \def\middlename{Cennyth\xspace}
+\def\firstinitial{A\xspace}
 \def\middleinitial{C\xspace}
 \def\phone{+1 (647)-287-2418\xspace}
 \def\workemail{stokea1@mcmaster.ca\xspace}
@@ -51,8 +63,9 @@
 \usepackage{enumitem}
 \usepackage{fancyhdr}
     %t\fancyfoot{\thepage}
-    \lhead{\surname, \givenname \middleinitial.}
-    \rhead{\institution (Mathematics \& Statistics)}
+    %\lhead{\surname, \givenname \middleinitial.}
+    \lhead{\firstinitial.\middleinitial. \surname}
+    \rhead{\institution (Dept. of Mathematics \& Statistics)}
     \pagestyle{fancy}
     
 \thispagestyle{plain}
@@ -60,8 +73,9 @@
  
 %\name{\givenname \surname}
 \name{\givenname \middlename \surname}
+%\name{\firstinitial.\middlename. \surname}
 %\name{\givenname \middleinitial \surname}
-\address{\workemail}
+\address{\workemail $\mid$ \personalemail}
 \address{\phone}
 \address{\institution, \city, \provinceshort}
 
@@ -90,6 +104,12 @@
 \input{sections/publications}
 
 %----------------------------------------------------------------------------------------
+%	INVITED TALKS
+%---------------------------------------------------------------------------------------
+\clearpage
+\input{sections/invited-talks}
+
+%----------------------------------------------------------------------------------------
 %	EMPLOYMENT
 %----------------------------------------------------------------------------------------
 
@@ -106,12 +126,6 @@
 %----------------------------------------------------------------------------------------
 
 \input{sections/ta} 
-
-%----------------------------------------------------------------------------------------
-%	INVITED TALKS
-%---------------------------------------------------------------------------------------
-
-\input{sections/invited-talks}
 
 %----------------------------------------------------------------------------------------
 %	TALKS
@@ -135,7 +149,7 @@
 %	PROFESSIONAL ORGANISATIONS
 %----------------------------------------------------------------------------------------
 
-%\input{sections/professsional-orgs}
+\input{sections/professional-orgs}
 
 %----------------------------------------------------------------------------------------
 %	REFERENCES
