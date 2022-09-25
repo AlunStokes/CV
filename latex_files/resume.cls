@@ -140,21 +140,21 @@
 
 \newenvironment{edSubsectionMin}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
  {\bf #1} \hfill {#2} \\ % Bold company name and date on the right
- {\em #3} \hfill {\em #4} \\
+ {\em #4} \hfill {#3} \\
  \vspace{-1em}
 }
 
 \newenvironment{edSubsectionFull}[6]{
  {\bf #1} \hfill {#2} \\ % Bold company name and date on the right
  {\em #3} \hfill {\em #4} \\
- Supervisor: {#5} \hfill {\em #6} \\
+{\em #6} \hfill  Supervisor: {#5} \\
  \vspace{-1em}
 }
 
-\newenvironment{edSubsectionHonours}[6]{
+\newenvironment{edSubsectionHonours}[5]{
  {\bf #1} \hfill {#2} \\ % Bold company name and date on the right
- {\em #3} \hfill {Honours: #4} \\
- Supervisor: {#5} \hfill {\em #6} \\
+ {\em #5} \hfill {#4} \\
+ Graduated {#3} \hfill {} \\
  \vspace{-1em}
 }
 
