@@ -151,10 +151,10 @@
  \vspace{-1em}
 }
 
-\newenvironment{edSubsectionHonours}[5]{
+\newenvironment{edSubsectionHonours}[6]{
  {\bf #1} \hfill {#2} \\ % Bold company name and date on the right
  {\em #5} \hfill {#4} \\
- Graduated {#3} \hfill {} \\
+ {#3} \hfill {#6} \\
  \vspace{-1em}
 }
 
@@ -165,6 +165,22 @@
 \newenvironment{taSubsectionMin}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
 	{\bf #1} \hfill {#2} \\ % Bold company name and date on the right
 	{\em #3} \hfill {\em #4} \\
+	\smallskip
+	\vspace{-1.5em} % Some space after the list of bullet points
+}
+
+\newenvironment{taSubsectionNoInst}[3]{ % 3 input arguments - Course name, code, dates
+	{\indent \quad \textbf{#1}} \hfill \\ % Bold company name and date on the right
+	{\indent \qquad \em #2} \hfill {#3} \\
+	\smallskip
+	\vspace{-1.5em} % Some space after the list of bullet points
+}
+
+\newenvironment{taSubsectionNoInstDouble}[5]{ % 3 input arguments - Course name, code, dates
+	{\indent \quad \textbf{#1}} \hfill \\ % Bold company name and date on the right
+	{\indent \qquad \em #2} \hfill {#3} \\
+	\smallskip
+    {\indent \qquad \em #4} \hfill {#5} \\
 	\smallskip
 	\vspace{-1.5em} % Some space after the list of bullet points
 }
@@ -235,3 +251,23 @@
 \def\nameskip{\bigskip} % The space after your name at the top
 \def\sectionskip{\medskip} % The space after the heading section
 
+
+%=============================================
+%        Employment
+%-=============================================
+
+\newenvironment{employNoInst}[3]{ % 3 input arguments - Date, Title, supervisor(s)
+	{\indent \quad \textbf{#1}} \hfill \textit{Supervised by:}\\ % Bold company name and date on the right
+	{\indent \qquad \em #2} \hfill {#3} \\
+	\smallskip
+	\vspace{-1.5em} % Some space after the list of bullet points
+}
+
+\newenvironment{taSubsectionNoInstDouble}[5]{ % 3 input arguments - Course name, code, dates
+	{\indent \quad \textbf{#1}} \hfill \textit{Supervised by:}\\ % Bold company name and date on the right
+	{\indent \qquad \em #2} \hfill {#3} \\
+	\smallskip
+    {\indent \qquad \em #4} \hfill {#5} \\
+	\smallskip
+	\vspace{-1.5em} % Some space after the list of bullet points
+}
